@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.updated-row.red {
+  background-color: #ff3232;
+  animation: fadeOutRed 0.5s ease;
+}
+
+.updated-row.green {
+  background-color: #2dff93;
+  animation: fadeOutGreen 0.5s ease;
+}
+
+@keyframes fadeOutRed {
+  0% { background-color: #f87171; }
+  100% { background-color: transparent; }
+}
+
+@keyframes fadeOutGreen {
+  0% { background-color: #7ce0ac; }
+  100% { background-color: transparent; }
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #000; 
+}
+
+.table td {
+  border: 1px solid #d1d5db;
+}
+
+
+.table th,
+.table td {
+  border-right-color: #000;
+  border-left-color: #000;
 }
