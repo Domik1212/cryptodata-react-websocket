@@ -27,12 +27,12 @@ code {
 }
 
 @keyframes fadeOutRed {
-  0% { background-color: #f87171; }
+  0% { background-color: #ff3232; }
   100% { background-color: transparent; }
 }
 
 @keyframes fadeOutGreen {
-  0% { background-color: #7ce0ac; }
+  0% { background-color: #2dff93; }
   100% { background-color: transparent; }
 }
 
